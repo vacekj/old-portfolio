@@ -1,0 +1,79 @@
+body {
+    margin-top: 4rem;
+    background: white;
+    font-family: 'Open Sans', sans-serif;
+    background: #F5F7FE;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+/* Logo */
+
+.logo {
+    font-family: 'Merriweather', serif;
+    font-size: 4rem;
+    text-shadow: 1px 1px 1px grey;
+    margin-bottom: 0;
+    margin-top: 0.5rem;
+}
+
+.subtitle {
+    color: rgb(95, 95, 95);
+    margin-top: 0.3rem;
+}
+
+/* Page */
+
+.page {
+    background: white;
+    box-shadow: 0 4px 6px 0 hsla(0, 0%, 0%, 0.2);
+    width: 100%;
+    border-radius: 3px;
+    margin-bottom: 2rem;
+}
+
+.page-body {
+    padding: 1rem;
+}
+
+.page-title {
+    padding: 0.7rem !important;
+    background: #33528B;
+    color: white;
+    box-shadow: 0 4px 6px 0 hsla(0, 0%, 0%, 0.2);
+    border-radius: 3px 3px 0px 0px;
+}
+
+.page-title * {
+    margin: 0;
+}
+
+/* Projects */
+
+.project-container {
+    position: relative;
+    padding: 1rem;
+    border-bottom: solid 1px grey;
+}
+
+.project-name * {
+    margin-top: 0;
+}
+
+.project-name {
+    display: inline-block;
+}
+
+.project-description {
+    display: inline-block;
+    width: 49%;
+}
+
+.project-image img {
+    border: solid 1px grey;
+    width: 50%;
+    float: right;
+}
