@@ -39,7 +39,7 @@ body {
 .logo {
     font-family: 'Merriweather', serif;
     font-size: 3rem;
-    text-shadow: 1px 1px 1px grey;
+    color: #33528B;
     margin-bottom: 0;
     margin-top: 0.5rem;
 }
@@ -49,6 +49,40 @@ body {
     margin-top: 0;
     margin-bottom: 0.5rem;
 }
+
+/* Hero */
+
+.hero {
+    margin-bottom: 5rem;
+    max-width: 40%;
+}
+
+.hero-text {
+    margin-bottom: 2rem;
+}
+
+.hero-button {
+    text-decoration: none;
+    display: inline-block;
+    height: 40px;
+    line-height: 40px;
+    padding: 0 14px;
+    border-radius: 4px;
+    font-weight: bold;
+    display: inline-block;
+}
+
+.hero-button.hero-contact {
+    color: white;
+    background: #33528B;
+}
+
+.hero-button.hero-projects {
+    color: #33528B;
+    background: white;
+}
+
+/* Menu */
 
 .menu {
     word-spacing: 1rem;
@@ -67,8 +101,8 @@ body {
     color: grey;
 }
 
-.menu a[href="#kontakt"] {
-    color: white;
+.menu .menu-button {
+    color: white !important;
     font-weight: bold;
     display: inline-block;
     background: #33528B;
@@ -78,10 +112,6 @@ body {
     border-radius: 4px;
 }
 
-.menu a[href="#kontakt"]:hover {
-    transform: translateY(-1px);
-    box-shadow: 0 7px 14px rgba(50, 50, 93, .1), 0 3px 6px rgba(0, 0, 0, .08);
-}
 
 /* Page */
 
@@ -149,4 +179,13 @@ body {
 
 .shadow {
     box-shadow: 0 4px 6px 0 hsla(0, 0%, 0%, 0.2);
+}
+
+.text-grey {
+    color: grey;
+}
+
+.button-hover:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 7px 14px rgba(50, 50, 93, .1), 0 3px 6px rgba(0, 0, 0, .08);
 }
