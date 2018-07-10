@@ -53,11 +53,13 @@ body {
 /* Hero */
 
 .hero {
+    position: relative;
     margin-bottom: 5rem;
-    max-width: 40%;
 }
 
 .hero-text {
+    max-width: 40%;
+    width: 40%;
     margin-bottom: 2rem;
 }
 
@@ -80,6 +82,13 @@ body {
 .hero-button.hero-projects {
     color: #33528B;
     background: white;
+}
+
+.hero-image img {
+    width: 20%;
+    position: absolute;
+    right: 10%;
+    top: 0;
 }
 
 /* Menu */
@@ -111,7 +120,6 @@ body {
     padding: 0 14px;
     border-radius: 4px;
 }
-
 
 /* Page */
 
