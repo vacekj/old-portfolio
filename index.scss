@@ -1,23 +1,12 @@
 $color-primary: #33528B;
 $color-secondary: red;
-
 body {
     position: relative;
     margin-top: -8px;
     font-family: 'Open Sans', sans-serif;
     margin-left: 0;
     margin-right: 0;
-}
-
-.bg {
-    position: absolute;
-    top: -550px;
-    width: 100%;
-    height: 1200px;
-    background: rgb(51, 82, 139);
-    background: linear-gradient(270deg, rgba(51, 82, 139, 0.5074404761904762) 0%, rgba(51, 82, 139, 0) 100%);
-    z-index: -100;
-    transform: skewY(-12deg);
+    margin-bottom: 0;
 }
 
 .container {
@@ -42,6 +31,33 @@ body {
     .menu {
         margin-bottom: 0.5rem;
     }
+}
+
+/* Stripes */
+
+.stripes * {
+    z-index: -100;
+}
+
+.stripe-projects {
+    position: absolute;
+    top: 1000px;
+    left: 0px;
+    width: 100%;
+    height: 600px;
+    background: rgb(51, 82, 139);
+    background: linear-gradient(270deg, rgba(51, 82, 139, 0.5074404761904762) 0%, rgba(51, 82, 139, 0) 100%);
+    transform: skewY(-12deg);
+}
+
+.stripe-top {
+    position: absolute;
+    top: -500px;
+    width: 100%;
+    height: 1200px;
+    background: rgb(51, 82, 139);
+    background: linear-gradient(270deg, rgba(51, 82, 139, 0.5074404761904762) 0%, rgba(51, 82, 139, 0) 100%);
+    transform: skewY(-12deg);
 }
 
 /* Header */
@@ -195,6 +211,33 @@ body {
 .project-image img {
     border: solid 1px grey;
     max-height: 100%;
+}
+
+/* Contacts */
+
+/* Footer */
+
+.footer {
+    text-align: center;
+    width: 100%;
+    height: 30px;
+    padding-top: 500px;
+    margin-top: -480px;
+    overflow: hidden;
+    position: relative;
+}
+
+.footer::before {
+    z-index: -100;
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 300px;
+    height: 2000px;
+    background: #f6f9fc;
+    -webkit-transform: skew(0, -12deg);
+    transform: skew(0, -12deg);
 }
 
 /* Misc */
