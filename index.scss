@@ -200,7 +200,6 @@ body {
 .project-container {
     position: relative;
     padding: 1rem;
-    border-bottom: solid 1px grey;
 }
 
 .project-name * {
@@ -228,6 +227,15 @@ body {
     border: solid 1px grey;
     max-width: 100%;
     max-height: 100%;
+}
+
+.project-container:not(:last-child)::after {
+    content: "";
+    display: block;
+    width: 90%;
+    height: 1px;
+    background: rgb(233, 233, 233);
+    margin: 10px auto;
 }
 
 /* Contacts */
