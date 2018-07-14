@@ -1,5 +1,6 @@
 $color-primary: #2D548D;
 $color-secondary: #228975;
+$color-primary-deemp: rgb(92, 113, 145);
 $stripe-opacity: 0.05;
 body {
     position: relative;
@@ -93,20 +94,17 @@ body {
 
 .header {
     position: relative;
-}
-
-.logo {
-    font-family: 'Merriweather', serif;
-    font-size: 3rem;
-    color: $color-primary;
-    margin-bottom: 0;
-    margin-top: 0.5rem;
-}
-
-.subtitle {
-    color: rgb(95, 95, 95);
-    margin-top: 0;
-    margin-bottom: 0.5rem;
+    .logo {
+        font-family: 'Merriweather', serif;
+        color: $color-primary;
+        margin-bottom: 0;
+        margin-top: 0.5rem;
+    }
+    .subtitle {
+        color: rgb(95, 95, 95);
+        margin-top: 0;
+        margin-bottom: 0.5rem;
+    }
 }
 
 /* Hero */
@@ -114,73 +112,48 @@ body {
 .hero {
     position: relative;
     margin-bottom: 5rem;
-}
-
-.hero-text {
-    max-width: 40%;
-    width: 40%;
-    margin-bottom: 2rem;
-}
-
-.hero-button {
-    text-decoration: none;
-    display: inline-block;
-    height: 40px;
-    line-height: 40px;
-    padding: 0 14px;
-    border-radius: 4px;
-    font-weight: bold;
-    display: inline-block;
-}
-
-.hero-button.hero-contact {
-    color: white;
-    background: $color-primary;
-}
-
-.hero-button.hero-projects {
-    color: $color-primary;
-    background: white;
-}
-
-.hero-image img {
-    width: 20%;
-    position: absolute;
-    right: 10%;
-    top: 0;
-}
-
-/* Menu */
-
-.menu {
-    word-spacing: 1rem;
-    position: absolute;
-    right: 0;
-    bottom: 0;
-}
-
-.menu a {
-    text-decoration: none;
-    color: rgb(46, 46, 46);
-    font-weight: 600;
-}
-
-.menu a:hover {
-    color: grey;
-}
-
-.menu .menu-button {
-    color: white !important;
-    font-weight: bold;
-    display: inline-block;
-    background: $color-primary;
-    height: 40px;
-    line-height: 40px;
-    padding: 0 14px;
-    border-radius: 4px;
+    .hero-text {
+        max-width: 40%;
+        width: 40%;
+        margin-bottom: 2rem;
+    }
+    .hero-button {
+        text-decoration: none;
+        display: inline-block;
+        height: 40px;
+        line-height: 40px;
+        padding: 0 14px;
+        border-radius: 4px;
+        font-weight: bold;
+        display: inline-block;
+    }
+    .hero-button.hero-contact {
+        color: white;
+        background: $color-primary;
+    }
+    .hero-button.hero-projects {
+        color: $color-primary;
+        background: white;
+    }
+    .hero-image img {
+        width: 20%;
+        position: absolute;
+        right: 10%;
+        top: 0;
+    }
 }
 
 /* Page */
+
+.page-title {
+    margin-bottom: 10px;
+    font-size: 18px;
+    line-height: 16px;
+    letter-spacing: 2px;
+    font-weight: 600;
+    color: $color-primary-deemp;
+    text-transform: uppercase;
+}
 
 .page {
     background: white;
@@ -188,29 +161,17 @@ body {
     width: 100%;
     border-radius: 4px;
     margin-bottom: 2rem;
-}
-
-.page-body {
-    padding: 1rem;
-}
-
-.page-title {
-    padding: 0.7rem !important;
-    background: $color-primary;
-    color: white;
-    box-shadow: 0 4px 6px 0 hsla(0, 0%, 0%, 0.2);
-    border-radius: 3px 3px 0px 0px;
-}
-
-.page-title * {
-    margin: 0;
+    .page-body {
+        padding: 1rem;
+    }
+    .page-stripe {
+        height: 10px;
+        background: $color-primary;
+        border-radius: 3px 3px 0px 0px;
+    }
 }
 
 /* Uvod */
-
-.uvod {
-    max-width: 800px;
-}
 
 .flex-container {
     display: flex;
@@ -229,11 +190,6 @@ body {
 }
 
 /* Projects */
-
-.projekty {
-    margin-left: auto;
-    max-width: 700px;
-}
 
 .project-container {
     position: relative;
@@ -307,7 +263,7 @@ body {
 /* Footer */
 
 .footer {
-    color: lightgray;
+    color: $color-primary-deemp;
     z-index: -100;
     text-align: center;
     width: 100%;
