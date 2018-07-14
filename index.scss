@@ -30,9 +30,10 @@ body {
             margin-bottom: 0.3rem;
         }
         text-align: center;
-        margin-bottom: 3rem;
+        margin-bottom: 1rem;
     }
     .menu {
+        display: none;
         text-align: center;
         position: unset !important;
         margin-bottom: 0;
@@ -205,7 +206,34 @@ body {
     margin: 0;
 }
 
+/* Uvod */
+
+.uvod {
+    max-width: 800px;
+}
+
+.flex-container {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    .flex-column {
+        width: 50%;
+        h4 {
+            text-align: center;
+        }
+    }
+    .flex-column:first-of-type {
+        border-right: solid 1px #e9e9e9;
+        width: 49%;
+    }
+}
+
 /* Projects */
+
+.projekty {
+    margin-left: auto;
+    max-width: 700px;
+}
 
 .project-container {
     position: relative;
@@ -250,6 +278,11 @@ body {
 
 /* Contacts */
 
+.kontakt {
+    max-width: 400px;
+    margin: 0 auto;
+}
+
 .button {
     text-decoration: none;
     color: white;
@@ -274,6 +307,7 @@ body {
 /* Footer */
 
 .footer {
+    color: lightgray;
     z-index: -100;
     text-align: center;
     width: 100%;
@@ -315,4 +349,8 @@ body {
 
 .text-center {
     text-align: center;
+}
+
+.padding {
+    padding: 1rem;
 }
