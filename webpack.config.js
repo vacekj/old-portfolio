@@ -14,7 +14,7 @@ module.exports = {
         rules: [{
             test: /\.scss$/,
             use: [
-                process.env.NODE_ENV === "production" ? MiniCssExtractPlugin.loader : 'style-loader',
+                process.env.NODE_ENV === "production" || process.env.TRAVIS ? MiniCssExtractPlugin.loader : 'style-loader',
                 'css-loader',
                 {
                     loader: 'fast-sass-loader'
