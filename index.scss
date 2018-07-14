@@ -1,5 +1,5 @@
 $color-primary: #2D548D;
-$color-secondary: #228975;
+$color-secondary: #4396DA;
 $color-primary-deemp: rgb(92, 113, 145);
 $stripe-opacity: 0.05;
 body {
@@ -76,7 +76,7 @@ body {
     width: 100%;
     height: 1200px;
     background: $color-secondary;
-    opacity: $stripe-opacity;
+    opacity: 0.1;
     transform: skewY(-12deg);
 }
 
@@ -85,23 +85,24 @@ body {
     top: -700px;
     width: 100%;
     height: 1200px;
-    background: $color-secondary;
-    opacity: $stripe-opacity;
+    background: $color-primary;
+    opacity: 1;
     transform: skewY(12deg);
 }
 
 /* Header */
 
 .header {
+    * {
+        color: white;
+    }
     position: relative;
     .logo {
         font-family: 'Merriweather', serif;
-        color: $color-primary;
         margin-bottom: 0;
         margin-top: 0.5rem;
     }
     .subtitle {
-        color: rgb(95, 95, 95);
         margin-top: 0;
         margin-bottom: 0.5rem;
     }
@@ -112,6 +113,9 @@ body {
 .hero {
     position: relative;
     margin-bottom: 5rem;
+    >* {
+        color: white;
+    }
     .hero-text {
         max-width: 40%;
         width: 40%;
@@ -122,18 +126,18 @@ body {
         display: inline-block;
         height: 40px;
         line-height: 40px;
-        padding: 0 14px;
+        padding: 2px 18px;
         border-radius: 4px;
-        font-weight: bold;
         display: inline-block;
     }
     .hero-button.hero-contact {
-        color: white;
-        background: $color-primary;
-    }
-    .hero-button.hero-projects {
         color: $color-primary;
         background: white;
+        font-weight: bold;
+    }
+    .hero-button.hero-projects {
+        color: white;
+        background: $color-secondary;
     }
     .hero-image img {
         width: 20%;
@@ -166,7 +170,7 @@ body {
     }
     .page-stripe {
         height: 10px;
-        background: $color-primary;
+        background: $color-secondary;
         border-radius: 3px 3px 0px 0px;
     }
 }
