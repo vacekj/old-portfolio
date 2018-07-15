@@ -293,19 +293,16 @@ body {
 
 @media only screen and (max-width: 600px) {
     .stripe-top-2 {
-        height: 1100px !important;
+        height: 1000px !important;
     }
     .container {
         width: 95%;
         padding-top: 1rem;
     }
-    .subtitle {
-        display: none;
-    }
     .header {
         .logo {
             margin-bottom: 0.3rem;
-            margin-left: 1rem;
+            margin-left: 1.2rem;
         }
         margin-bottom: 1rem;
     }
