@@ -143,13 +143,15 @@ body {
     display: flex;
     flex-flow: row wrap;
     justify-content: space-between;
-    flex-basis: 49%;
+    flex-basis: content;
     .flex-column {
         width: 50%;
     }
     .project-image {
+        width: 28%;
+        height: 400px;
+        overflow: hidden;
         img {
-            max-width: 100%;
             width: 100%;
         }
     }
@@ -160,7 +162,6 @@ body {
             a {
                 text-decoration: none;
                 color: black;
-
             }
             a:hover {
                 color: $color-primary;
@@ -168,6 +169,7 @@ body {
         }
     }
     .project-text {
+        width: 70%;
         .project-client {
             color: grey;
             font-size: small;
@@ -179,6 +181,7 @@ body {
             content: "Zadavatel: ";
         }
         .project-desc {
+            line-height: 2rem;
             margin-top: 5px;
         }
     }
@@ -199,6 +202,9 @@ body {
     @media screen and (max-width: 600px) {
         .flex-column {
             width: 100%;
+        }
+        .project-image {
+            margin-top: 1rem;
         }
     }
 }
@@ -289,6 +295,12 @@ body {
 
 .padding {
     padding: 1rem;
+}
+
+@media only screen and (max-width: 1200px) {
+    .container {
+        width: 80%;
+    }
 }
 
 @media only screen and (max-width: 600px) {
