@@ -86,11 +86,11 @@ body {
         padding: 2px 18px;
         border-radius: 4px;
         display: inline-block;
+        font-weight: bold;
     }
     .hero-button.hero-contact {
         color: $color-primary;
         background: white;
-        font-weight: bold;
     }
     .hero-button.hero-projects {
         color: white;
@@ -147,14 +147,6 @@ body {
     .flex-column {
         width: 50%;
     }
-    .project-image {
-        width: 28%;
-        height: 400px;
-        overflow: hidden;
-        img {
-            width: 100%;
-        }
-    }
     .project-title {
         width: 100%;
         h2 {
@@ -183,6 +175,30 @@ body {
         .project-desc {
             line-height: 2rem;
             margin-top: 5px;
+            p {
+                text-indent: 2rem;
+                margin-bottom: 0;
+                margin-top: 0;
+            }
+        }
+    }
+    .project-image {
+        width: 28%;
+        height: 400px;
+        overflow: hidden;
+        img {
+            width: 100%;
+        }
+    }
+    .project-links {
+        width: 100%;
+        text-align: center;
+        .button-code {
+            background: white;
+            color: black;
+        }
+        .button-code::before {
+            content: "";
         }
     }
     .project-quote {
@@ -244,6 +260,20 @@ body {
 
 .button-phone {
     background: #2AB200;
+}
+
+spacer {
+    content: "";
+    display: block;
+    width: 20px;
+    height: 1px;
+    background: rgb(233, 233, 233);
+    margin: 10px auto;
+}
+
+.button-github {
+    background: white;
+    color: black;
 }
 
 /* Footer */
@@ -346,5 +376,6 @@ body {
     }
     .button {
         width: 90%;
+        margin: 5px 0;
     }
 }
