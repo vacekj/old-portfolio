@@ -19,6 +19,6 @@ deploy:
   skip-cleanup: true
   github-token: $GITHUB_TOKEN # Set in travis-ci.org dashboard
   local-dir: './dist'
-  fqdn: zlepsi.me
+  fqdn: portfolio.zlepsi.me
   on:
     branch: master
