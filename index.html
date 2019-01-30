@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="cs">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Josef Vacek - Web Developer bez zbytečností</title>
+    <link rel="stylesheet" href="index.css">
+    <link href="https://fonts.googleapis.com/css?family=Merriweather|Open+Sans" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt"
+        crossorigin="anonymous">
+</head>
+
+<body>
+    <div class="stripes">
+        <div class="stripe-top">
+        </div>
+        <div class="stripe-top-2">
+        </div>
+        <div class="stripe-projects"></div>
+    </div>
+    <div class="container">
+        <div class="header">
+            <h3 class="logo">Josef Vacek</h3>
+        </div>
+
+        <div class="hero">
+            <h1 class="hero-title">
+                Inovace je má vášeň.
+            </h1>
+            <div class="hero-text">
+                Z Vašeho nápadu udělám realitu. Vyvinu novou aplikaci, nebo oživím již existující. Profesionální přístup, lidské ceny.
+            </div>
+            <div class="hero-image">
+                <img src="portrait.png" alt="" srcset="">
+            </div>
+            <div class="hero-buttons">
+                <a href="#contact" class="hero-button button-hover hero-contact shadow">
+                    <i class="fas fa-handshake"></i> Kontakt</a>
+                <a href="#projects" class="hero-button button-hover hero-projects shadow">
+                    <i class="fas fa-file-code"></i> Projekty</a>
+            </div>
+        </div>
+
+        <!-- Úvod -->
+        <h2 class="page-title">Úvod</h2>
+        <div class="page">
+            <a name="intro"></a>
+            <div class="page-stripe">
+            </div>
+            <div class="page-body uvod-text">
+                Josef Vacek - Full-stack web developer, který tvoří a spravuje digitální nástroje pro klienty v Olomouci a okolí.
+                <!-- TODO: fotka když mobil s obtékáním. loga klientů v medailoncích -->
+            </div>
+        </div>
+
+        <!-- Projekty -->
+        <h2 class="page-title">Projekty</h2>
+        <div class="page">
+            <a name="projects"></a>
+            <div class="page-stripe">
+            </div>
+            <div class="project-container flex-container">
+                <div class="flex-column project-title">
+                    <h2>
+                        <a href="https://zastupovani.gytool.cz">Zastupování</a>
+                    </h2>
+                </div>
+                <div class="flex-column project-text">
+                    <div class="project-client">
+                        <a href="http://www.gytool.cz">Gymnázium, Olomouc - Hejčín</a>
+                    </div>
+                    <div class="project-desc">
+                        <p>
+                            Ušitá na míru pro Gymnázium v Olomouci - Hejčíně, aplikace extrahuje data ze starého systému (bez zásahu) a poskytuje je
+                            k zobrazení v moderním a efektivním prostředí, bez ohledu na prohlížeč nebo zařízení.
+                        </p>
+                        <p>
+                            Staví na osvědčenýnch open-source technologiích Webpack a Typescript + Bootstrap s vlastními styly navrch a na dalších webových
+                            standartech. Kvalita a stabilita je zaručena unit a E2E testy za pomoci Mocha a Cypress. Beží
+                            samostatně v prohlížeči, bez nutnosti backendu.
+                        </p>
+
+                    </div>
+                </div>
+                <div class="flex-column project-image">
+                    <a href="https://zastupovani.gytool.cz">
+                        <img src="./project-pics/zastupovani.png" alt="" srcset="">
+                    </a>
+                </div>
+                <div class="flex-column project-links">
+                    <a href="https://zastupovani.gytool.cz" class="button button-hover shadow button-live">
+                        <i class="far fa-eye"></i> Oficiální nasazení</a>
+                    <a href="https://github.com/jouzalol/better-zastupovani" class="button button-hover shadow button-code">
+                        <i class="fas fa-code"></i> Kód</a>
+                </div>
+                <div class="flex-column project-quote">Aplikace nám výrazně zjednodušila práci se suplováním.</div>
+            </div>
+            <div class="project-container flex-container">
+                <div class="flex-column project-title">
+                    <h2>
+                        <a href="https://isas.zlepsi.me">Better iSAS</a>
+                    </h2>
+                </div>
+                <div class="flex-column project-text">
+                    <div class="project-client">
+                        <a href="http://www.gytool.cz">Studenti Gymnázia, Olomouc - Hejčín</a>
+                    </div>
+                    <div class="project-desc">
+                        <p>
+                            Aplikace vznikla na popud studentů gymnázia, kteří chtěli alternativu k zastaralé a nefunkční aplikaci iSAS. Better iSAS
+                            přináší tolik potřebné funkce a svěží design, které staré aplikaci chyběly.
+                        </p>
+                        <p>
+                            Podobně jako Zastupování aplikace využívá frameworku Bootstrap s vlastními styly pro front-end. Back-end běží pod Node.js
+                            a frameworkem Express.js. Kvalitu a stabilitu opět zajišťuje dvojice Mocha + Cypress.
+                        </p>
+
+                    </div>
+                </div>
+                <div class="flex-column project-image">
+                    <a href="https://isas.zlepsi.me">
+                        <img src="./project-pics/isas.png" alt="" srcset="">
+                    </a>
+                </div>
+                <div class="flex-column project-links">
+                    <a href="#" class="button button-hover shadow button-live">
+                        <i class="far fa-eye"></i>Projekt již není aktivní</a>
+                    <a href="https://github.com/jouzalol/better-isas" class="button button-hover shadow button-code">
+                        <i class="fas fa-code"></i> Kód</a>
+                </div>
+                <div class="flex-column project-quote">Konečně si nemusím počítat průměry na kalkulačce.</div>
+            </div>
+        </div>
+
+        <!-- Kontakt -->
+        <h2 class="page-title">Kontakt</h2>
+        <div class="page">
+            <a name="contact"></a>
+            <div class="page-stripe">
+            </div>
+            <div class="page-body text-center">
+                <a href="mailto:vacekj@outlook.com" class="button button-email button-hover shadow">
+                    <i class="far fa-envelope"></i> Email
+                </a>
+                <a href="http://m.me/jovacek" class="button button-messenger button-hover shadow">
+                    <i class="fab fa-facebook-messenger"></i> Messenger
+                </a>
+                <a href="tel:+420605981166" class="button button-phone button-hover shadow">
+                    <i class="fas fa-phone"></i> Telefon
+                </a>
+                <spacer></spacer>
+                <a href="https://github.com/JouzaLoL" class="button button-github button-hover shadow">
+                    <i class="fab fa-github"></i> GitHub
+                </a>
+
+            </div>
+        </div>
+
+    </div>
+    <div class="footer">
+        &copy; Josef Vacek 2018
+    </div>
+    <script src="index.js"></script>
+</body>
+
+</html>
